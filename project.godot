@@ -11,9 +11,20 @@ config_version=5
 [application]
 
 config/name="panic_farm"
+run/main_scene="uid://mdtlf771crgf"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=500
+window/stretch/mode="canvas_items"
 
 [dotnet]
 
 project/assembly_name="panic_farm"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
