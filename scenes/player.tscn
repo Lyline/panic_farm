@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d2kjsuifj4fl1" path="res://assets/animations/Player_Walk.png" id="1_3vyb7"]
 [ext_resource type="Texture2D" uid="uid://bhm4ue75x15bp" path="res://assets/animations/Unarmed_Death_with_shadow.png" id="1_dqkch"]
-[ext_resource type="Script" uid="uid://ckcsq88yx0me1" path="res://scripts/player.gd" id="1_qlg0r"]
+[ext_resource type="Script" uid="uid://88a3kua6on5k" path="res://scripts/player.gd" id="1_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://bg3hkt3x0m31" path="res://assets/animations/Unarmed_Hurt_with_shadow.png" id="2_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://brmq8f262bh5b" path="res://assets/animations/Unarmed_Idle_with_shadow.png" id="3_tuyoq"]
 
