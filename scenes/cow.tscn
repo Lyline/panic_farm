@@ -1,0 +1,172 @@
+[gd_scene load_steps=23 format=3 uid="uid://d15jtd5pwr4hd"]
+
+[ext_resource type="Texture2D" uid="uid://do6ld3t657yxp" path="res://assets/animations/Bull_animation_with_shadow.png" id="1_fgglk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fgglk"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cairq"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gly4w"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2el1"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6j430"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh455"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8skmv"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xabja"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(64, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flufj"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(128, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4v0gp"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(192, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yl4pt"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(256, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmnev"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(320, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evg7e"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6eo0f"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iklcx"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxvfc"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcuyw"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qweyp"]
+atlas = ExtResource("1_fgglk")
+region = Rect2(320, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5jtgi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fgglk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cairq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gly4w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2el1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6j430")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hh455")
+}],
+"loop": true,
+"name": &"bull_down",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8skmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xabja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flufj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4v0gp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yl4pt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmnev")
+}],
+"loop": true,
+"name": &"bull_h",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evg7e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6eo0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iklcx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxvfc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcuyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qweyp")
+}],
+"loop": true,
+"name": &"bull_top",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t08af"]
+size = Vector2(28, 47)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7l0lq"]
+radius = 24.0
+height = 66.0
+
+[node name="Bull" type="Area2D"]
+
+[node name="BullAnimation" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_5jtgi")
+animation = &"bull_h"
+
+[node name="BullVtCollsion" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_t08af")
+
+[node name="BullHzCollision" type="CollisionShape2D" parent="."]
+position = Vector2(7, -3)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_7l0lq")

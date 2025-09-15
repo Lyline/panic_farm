@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://mdtlf771crgf"]
+[gd_scene load_steps=21 format=4 uid="uid://mdtlf771crgf"]
 
 [ext_resource type="Texture2D" uid="uid://bnhrsqj23ytcr" path="res://assets/tiles/ground/FieldsTile_19.png" id="1_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://qlh5fjh3yssl" path="res://assets/tiles/ground/FieldsTile_38.png" id="2_tbgi4"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://3k8r72y3phob" path="res://assets/tiles/shadow/2.png" id="7_tipki"]
 [ext_resource type="Texture2D" uid="uid://by8iuqwm4pghb" path="res://assets/tiles/shadow/5.png" id="8_85g3d"]
 [ext_resource type="PackedScene" uid="uid://c7n1j656fja2v" path="res://scenes/player.tscn" id="9_85g3d"]
+[ext_resource type="PackedScene" uid="uid://d15jtd5pwr4hd" path="res://scenes/cow.tscn" id="9_choun"]
 [ext_resource type="Texture2D" uid="uid://djvehdkglmma8" path="res://assets/tiles/grass/6.png" id="10_jkv2x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tipki"]
@@ -86,6 +87,8 @@ tile_set = SubResource("TileSet_eb6dy")
 [node name="detail_game_zone" type="TileMapLayer" parent="game_zone"]
 tile_map_data = PackedByteArray("AAAFABIAAAAAAAAAAAAGABoAAAAAAAAAAQAGAB0AAAAAAAAAAAAIAAUAAAAAAAAAAAAJAAIAAAAAAAAAAAAJAAgAAAAAAAAAAAALAAcAAAAAAAAAAQAOAB4AAAAAAAAAAQAPAAsAAAAAAAAAAAAPABoAAAAAAAAAAQAQAAgAAAAAAAAAAQARABoAAAAAAAAAAAARABsAAAAAAAAAAQASABgAAAAAAAAAAAASABsAAAAAAAAAAAATAAwAAAAAAAAAAAAVAA8AAAAAAAAAAAAXABcAAAAAAAAAAQAXABwAAAAAAAAAAQAZAAUAAAAAAAAAAAAbAAIAAAAAAAAAAAAbABcAAAAAAAAAAAAdABoAAAAAAAAAAAAfAB0AAAAAAAAAAQAAABUAAQAAAAAAAAAEAA8AAQAAAAAAAAAFABoAAQAAAAAAAAAMAA4AAQAAAAAAAAANAA0AAQAAAAAAAAAQAAEAAQAAAAAAAAARAAkAAQAAAAAAAAAVAAUAAQAAAAAAAAAaAAsAAQAAAAAAAAAbABIAAQAAAAAAAAAdAAkAAQAAAAAAAAABAAMAAgAAAAAAAAAJAA0AAgAAAAAAAAAKAAAAAgAAAAAAAAACABwAAgAAAAAAAAAHABMAAgAAAAAAAAAKABkAAgAAAAAAAAAVABgAAgAAAAAAAAAXAAkAAgAAAAAAAAAbAAsAAgAAAAAAAAA=")
 tile_set = SubResource("TileSet_tipki")
+
+[node name="Bull" parent="." instance=ExtResource("9_choun")]
 
 [node name="Player" parent="." instance=ExtResource("9_85g3d")]
 
